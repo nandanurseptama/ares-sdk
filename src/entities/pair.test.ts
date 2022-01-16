@@ -5,7 +5,7 @@ describe('computePairAddress', () => {
   it('should correctly compute the pool address', () => {
     const tokenA = new Token(43113, '0xec670571CC55Ac848bdcbe375883dB22D355ea45', 18, 'WAR', 'Ares Token')
     const tokenB = new Token(43113, '0xc676516F9fFD816a13D4a763b13BC0385A3d6567', 18, 'WAVAX', 'Wrapped Avax')
-    const result = Pair.getAddress(tokenA,tokenB)
+    const result = Pair.getAddress(tokenA, tokenB)
 
     expect(result.toLowerCase()).toEqual('0x1b4dA3AB2c909F53891D8E6BE09Ff43f5e543D6d'.toLowerCase())
   })

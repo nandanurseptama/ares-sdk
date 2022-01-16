@@ -70,5 +70,5 @@ export const WETH = {
     18,
     'WAVAX',
     'Wrapped AVAX'
-  ),
+  )
 }

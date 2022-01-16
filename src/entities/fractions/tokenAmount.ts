@@ -13,15 +13,13 @@ export class TokenAmount extends CurrencyAmount {
     super(token, amount)
     this.token = token
   }
-  
-  public static fromRawAmount(token : Token, amount : BigintIsh) : TokenAmount{
-    return new TokenAmount(token, amount);
+  public static fromRawAmount(token: Token, amount: BigintIsh): TokenAmount {
+    return new TokenAmount(token, amount)
   }
   public add(other: TokenAmount): TokenAmount {
     invariant(this.token.equals(other.token), 'TOKEN')
     return new TokenAmount(this.token, JSBI.add(this.raw, other.raw))
   }
-
   public subtract(other: TokenAmount): TokenAmount {
     invariant(this.token.equals(other.token), 'TOKEN')
     return new TokenAmount(this.token, JSBI.subtract(this.raw, other.raw))
