@@ -1,4 +1,4 @@
-import { Token} from '@uniswap/sdk-core'
+import { Token } from '@uniswap/sdk-core'
 import { FACTORY_ADDRESS } from '../constants'
 //import { InsufficientInputAmountError } from '../errors'
 import { computePairAddress } from './pair'
